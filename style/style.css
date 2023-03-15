@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------Navbar CSS-------- */
+nav {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+
+    padding: 0.5rem 2.5rem;
+}
+
+.vl1 {
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    left: 170px;
+    align-items: center;
+
+    background-color: #215391;
+
+    border: 1px solid #215391;
+}
+
+.menu {
+    display: none;
+    align-items: center;
+    margin: 0 -1rem;
+}
+
+.menu a {
+    margin: 0 1rem;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #215391;
+}
+
+.menu a:hover {
+    color: crimson;
+}
+
+#login-button {
+    color: white;
+    background: #215391;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    cursor: pointer;
+
+    padding: 5px 15px;
+}
+
+.hamburger {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.hamburger span {
+    color: black;
+    font-size: 2rem;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+
+    padding-top: 6rem;
+    opacity: 0;
+    transform: translateY(-100%);
+    background-color: white;
+    color: #FFF;
+    transition: 0.3s;
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 1rem;
+    color: #215391;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
+/* --------------------- Login Page CSS ------------------ */
+.box {
+    display: flex;
+    gap: 20px;
+
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+
+    width: 80%;
+    height: auto;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #6119BE, #1576A7, #ffffff, #ffffff);
+    border-image-slice: 1;
+    padding: 25px;
+}
+
+.left-side {
+    width: 50%;
+    height: auto;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 20px;
+}
+
+.left-side hr {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    border: 2px solid #932A22;
+}
+
+.logos img {
+    width: 100px;
+    height: 60px;
+}
+
+.listing p {
+    float: center;
+    text-align: left;
+}
+
+.Plenty-of-other-Benefits {
+    text-align: left;
+    margin-left: 5%;
+}
+
+.Plenty-of-other-Benefits p {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 29px;
+
+    color: #8E2C21;
+}
+
+.Plenty-of-other-Benefits h2 {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 29px;
+
+    color: #8E2C21;
+}
+
+.know-more {
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.know-more a {
+    text-decoration: none;
+    padding: 10px 40px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    background: #8E2C21;
+
+    color: #FFFFFF;
+}
+
+.box .Plug-n-Play {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+
+    color: #8E2C21;
+}
+
+.box p {
+    font-family: 'Futura';
+    font-style: normal;
+
+    text-align: center;
+    margin-top: 5%;
+    color: #8E2C21;
+}
+
+.right-side h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    text-align: center;
+    margin-top: 10%;
+}
+
+.right-side p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    text-align: center;
+    margin-top: 5%;
+}
+
+.right-side a {
+    color: #ffffff;
+}
+
+form {
+    height: auto;
+}
+
+.inputBox {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.inputBox label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+}
+
+.inputBox input {
+    background: none;
+    width: 60%;
+    padding-top: 10px;
+    margin-top: 5%;
+    border-bottom: 2px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+}
+
+.agree-or-not {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.agree-or-not label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.submit-button input {
+    background: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    width: 40%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+
+
+    color: #2B5BAE;
+}
+
+.submit-button hr {
+    width: 70%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.already-user {
+    text-align: center;
+}
+
+/* --------------- MEDIA QUERIES BELOW 👇 ------------------ */
+/* --------Navbar Media Queries--------- */
+
+@media (min-width: 1084px) {
+
+    /* ------------Navigation bar Media Queries------------ */
+    .mobile-menu,
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+}
+
+/* -------- Hide vertical line using media query ---------- */
+
+@media (max-width: 1084px) {
+    .vl1 {
+        display: none;
+    }
+}
+
+
+/* --------------- Login CSS --------------- */
+@media (max-width: 768px) and (min-width: 260px) {
+    .box {
+        display: block;
+        width: 100%;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .left-side{
+        width: 100%;
+    }
+
+    .right-side{
+        width: 100%;
+        margin-top: 30px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+}

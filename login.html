@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ----------- CSS File Link ------------- -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- ------hamburger icon css link-------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        .right-side {
+            width: 50%;
+            height: auto;
+            padding-bottom: 40px;
+
+            background-image: url(images/right-bg-image.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ----------Navigation bar Html Code----------- -->
+    <header>
+
+        <nav>
+            <img src="images/logo.png" alt="logo-image" class="branding-image">
+            <div class="vl1">
+
+            </div>
+
+            <div class="menu">
+                <a href="#">Product Directory</a>
+                <a href="#">Who we work with</a>
+                <a href="#">Support</a>
+                <a href="#">Already a user?</a>
+                <button id="login-button">Login</button>
+            </div>
+
+            <button class="hamburger">
+                <span class="material-icons">menu</span>
+            </button>
+        </nav>
+
+        <div class="mobile-menu">
+            <a href="#">Product Directory</a>
+            <a href="#">Who we work with</a>
+            <a href="#">Support</a>
+            <a href="#">Register Now</a>
+            <a href="#">Login</a>
+        </div>
+    </header>
+
+    <div class="box">
+
+        <!-- ------------- Left Side of this box --------------- -->
+        <div class="left-side">
+            <div class="logos">
+                <img src="images/logo1.png" alt="image">
+                <img src="images/logo2.png" alt="image">
+                <img src="images/logo3.png" alt="image">
+            </div>
+            <hr>
+
+            <div>
+                <p><span class="Plug-n-Play">Plug-n-Play</span> Solution for a desktop based accounting platform</p>
+            </div>
+
+            <div class="listing">
+                <p>
+                    <img src="images/tick 1.png" alt="image">
+                    &nbsp; &nbsp;Seamless bank Reconciliation with auto-voucher generation.
+                </p><br>
+                <p>
+                    <img src="images/tick 1.png" alt="image">
+                    &nbsp; &nbsp;Instant Paperless Registration.
+                </p><br>
+                <p>
+                    <img src="images/tick 1.png" alt="image">
+                    &nbsp; &nbsp;Direct Vendor Payment with auto-reconciliation.
+                </p><br>
+                <p>
+                    <img src="images/tick 1.png" alt="image">
+                    &nbsp; &nbsp;Fetch Account Balance and Bank Statement
+                </p><br>
+            </div>
+
+            <div class="Plenty-of-other-Benefits">
+                <h2>Plenty of other Benefits</h2>
+            </div>
+
+            <div class="know-more">
+                <a href="#">Know more</a>
+            </div>
+        </div>
+
+        <!-- ---------------- Right Side of this box ----------------- -->
+        <div class="right-side">
+            <h2>Welcome to Partner Portal</h2>
+            <p>Sign up to create and account with us. <br> Or <br> <a href="#">Login</a> to get started.</p>
+            <form action="">
+                <div class="inputBox">
+                    <label>Enter you Email Address</label><br>
+                    <input type="email" name="myEmail" autocomplete="off" required>
+                </div>
+
+                <div class="inputBox">
+                    <label>Enter your Mobile number</label><br>
+                    <input type="text" name="myNumber" autocomplete="off" required>
+                </div>
+
+                <div class="inputBox">
+                    <label>Legal Name ( Trade Name )</label><br>
+                    <input type="text" name="myLegalname" autocomplete="off" required>
+                </div>
+
+                <div class="inputBox">
+                    <label>Password</label><br>
+                    <input type="password" name="myLegalname" autocomplete="off" required>
+                </div>
+
+                <div class="inputBox">
+                    <label>Re Enter Password</label><br>
+                    <input type="password" name="myLegalname" autocomplete="off" required>
+                </div>
+
+                <div class="agree-or-not">
+                    <input type="checkbox">
+                    <label>I agree to terms & conditions</label>
+                </div>
+                <div class="submit-button">
+                    <input type="submit" value="Continue →">
+                    <hr>
+                </div>
+
+                <div class="already-user">
+                    <p>Already have an account? <a href="#">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const hamburger_icon = hamburger.querySelector('span');
+            const mobile_menu = document.querySelector('.mobile-menu');
+
+            hamburger.addEventListener('click', () => {
+                hamburger_icon.innerText = hamburger_icon.innerText === 'menu'
+                    ? 'close'
+                    : 'menu';
+
+                mobile_menu.classList.toggle('is-open');
+            })
+        </script>
+
+    </div>
+</body>
+
+</html>
