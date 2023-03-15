@@ -375,7 +375,7 @@ form {
 
 
 /* --------------- Login CSS --------------- */
-@media (max-width: 768px) and (min-width: 260px) {
+@media (max-width: 768px) and (min-width: 200px) {
     .box {
         display: block;
         width: 100%;
@@ -384,7 +384,7 @@ form {
     }
 
     .left-side{
-        width: 50%;
+        width: 100%;
     }
 
     .right-side{
